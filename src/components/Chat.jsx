@@ -25,7 +25,7 @@ const Chat = ({ user }) => {
 
   return (
     <>
-      <main className="flex flex-col p-[10px] relative">
+      <main className="flex flex-col p-[10px] relative overflow-auto mb-[50px]">
         {messages &&
           messages.map((el, index) => (
             <Message key={index} user={user} message={el} />

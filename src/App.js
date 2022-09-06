@@ -7,11 +7,13 @@ import Chat from "./components/Chat";
 function App() {
   const [user] = useAuthState(auth);
   return (
-    <div className="max-w-[728px] mx-auto text-center">
-      <section className="flex flex-col h-[90vh] bg-gray-100 mt-10 shadow-xl border relative">
-        <NavBar user={user} />
-        {user && <Chat user={user} />}
-      </section>
+    <div className="bg-black h-[105vh] bg-cover">
+      <div className="max-w-[728px] mx-auto text-center ">
+        <section className="flex flex-col h-[90vh] bg-gray-100 mt-5 shadow-xl border relative">
+          <NavBar user={user} />
+          {user && <Chat user={user} />}
+        </section>
+      </div>
     </div>
   );
 }
